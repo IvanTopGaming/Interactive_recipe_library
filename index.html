@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интерактивная библиотека рецептов</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>Интерактивная библиотека рецептов</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Поиск рецептов</a></li>
+				<li><a href="#">Добавить рецепт</a></li>
+				<li><a href="#">Избранное</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="search">
+			<h2>Поиск рецептов</h2>
+			<form id="search-form">
+				<input type="text" id="search-input" placeholder="Введите название или ингредиент">
+				<button type="submit">Поиск</button>
+			</form>
+			<div id="search-results"></div>
+		</section>
+		<section id="add-recipe">
+			<h2>Добавить рецепт</h2>
+			<form id="add-recipe-form">
+				<input type="text" id="recipe-name" placeholder="Название рецепта">
+				<textarea id="recipe-ingredients" placeholder="Ингредиенты"></textarea>
+				<textarea id="recipe-instructions" placeholder="Инструкции"></textarea>
+				<input type="file" id="recipe-image" accept="image/*">
+				<button type="submit">Добавить</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Интерактивная библиотека рецептов</p>
+	</footer>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
